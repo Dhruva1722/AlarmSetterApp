@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AlarmSetterApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="colorPrimary">#779ADD</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+    </style>
+
+    <style name="Theme.AlarmSetterApp" parent="Base.Theme.AlarmSetterApp" />
+
+
+</resources>
