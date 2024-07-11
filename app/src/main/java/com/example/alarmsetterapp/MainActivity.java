@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements AlarmAdapter.OnAl
 
         saveAlarm(requestCode, hour, minute, label);
 
-        String alarmText = String.format("Alarm set for %02d:%02d", hour, minute);
+        String alarmText = String.format("%02d:%02d", hour, minute);
         AlarmItem alarmItem = new AlarmItem(requestCode, hour, minute, label, alarmText);
         alarmList.add(alarmItem);
         adapter.notifyDataSetChanged();
@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity implements AlarmAdapter.OnAl
             int hour = Integer.parseInt(alarmParts[1]);
             int minute = Integer.parseInt(alarmParts[2]);
             String label = alarmParts[3];
-            String alarmText = String.format("Alarm set for %02d:%02d", hour, minute);
+            String alarmText = String.format("%02d:%02d", hour, minute);
             AlarmItem alarmItem = new AlarmItem(requestCode, hour, minute, label, alarmText);
             alarmList.add(alarmItem);
         }
@@ -262,7 +262,7 @@ public class MainActivity extends AppCompatActivity implements AlarmAdapter.OnAl
 
             saveAlarm(requestCode, newHour, newMinute, newLabel);
 
-            String alarmText = String.format("Alarm set for %02d:%02d", newHour, newMinute);
+            String alarmText = String.format("%02d:%02d", newHour, newMinute);
             AlarmItem newAlarmItem = new AlarmItem(requestCode, newHour, newMinute, newLabel, alarmText);
             alarmList.add(newAlarmItem);
             adapter.notifyDataSetChanged();

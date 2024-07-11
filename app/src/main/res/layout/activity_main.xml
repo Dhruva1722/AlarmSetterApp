@@ -15,6 +15,17 @@
 <!--        app:lottie_autoPlay="true"-->
 <!--        app:lottie_loop="true"/>-->
 
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:titleTextColor="@color/white"
+        android:background="@drawable/toolbar_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:title="@string/app_name"/>
+
         <TimePicker
             android:id="@+id/timePicker"
             android:layout_width="wrap_content"
@@ -23,6 +34,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="32dp"
             android:padding="5dp"
+            android:layout_below="@id/toolbar"
             android:background="@drawable/rectangle_background"/>
 
     <com.google.android.material.textfield.TextInputLayout
